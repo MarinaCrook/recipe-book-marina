@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mango Salsa - Marina's Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; margin-bottom: 20px; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+        .back-btn { text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Marina's Recipe Book</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Appetizers.html" class="w3-button w3-light-grey w3-round-large back-btn">← Back to Appetizers</a>
+    
+    <header>
+        <h1>Fresh Mango Salsa</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://cookieandkate.com/images/2015/04/mango-salsa-with-tortilla-chips.jpg" 
+                 alt="Mango Salsa" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 15 minutes</li>
+                    <li><strong>Total Time:</strong> 15 minutes</li>
+                    <li><strong>Servings:</strong> 3 Cups</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>3 ripe mangos (diced)</li>
+                <li>1 medium red bell pepper (chopped)</li>
+                <li>½ cup red onion (chopped)</li>
+                <li>¼ cup fresh cilantro leaves (packed and chopped)</li>
+                <li>1 jalapeño (seeded and minced)</li>
+                <li>1 large lime (juiced)</li>
+                <li>⅛ to ¼ teaspoon salt (to taste)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Combine:</strong> In a medium serving bowl, combine the diced mango, bell pepper, onion, cilantro, and jalapeño.</li>
+                <li><strong>Dress:</strong> Drizzle the fresh lime juice over the mixture.</li>
+                <li><strong>Mix and Season:</strong> Using a large spoon, stir the ingredients together. Season with salt to taste and stir again.</li>
+                <li><strong>Rest:</strong> For the best flavor profile, let the salsa rest for at least 10 minutes before serving to allow the juices to meld.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Storage:</strong> While best served fresh, you can store this salsa in an airtight container in the refrigerator for several days. The fruit will soften slightly over time.</p>
+            <p>Recipe adapted from <a href="https://cookieandkate.com/fresh-mango-salsa-recipe/#tasty-recipes-23816-jump-target" target="_blank">Kathryne Taylor at Cookie and Kate</a></p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Marina's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

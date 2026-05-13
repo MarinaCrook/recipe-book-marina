@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Baked Sweet Potato Fries - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #2d4a2a; text-align: center; } 
+        h2 { color: #4a6a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 450px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:4;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;z-index:3" id="myOverlay"></div>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Sides: Sweet Potato Fries</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Sides.html" class="w3-button w3-light-grey w3-round-large">← Back to Sides</a>
+    
+    <header>
+        <h1>Crispy Baked Sweet Potato Fries</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; padding: 20px 0;">
+            <img src="https://www.cookingclassy.com/wp-content/uploads/2021/10/baked-sweet-potato-fries-12.jpg" 
+                 alt="Crispy Baked Sweet Potato Fries" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 15 minutes (plus soaking)</li>
+                    <li><strong>Cook Time:</strong> 25 minutes</li>
+                    <li><strong>Temperature:</strong> 215°C (425°F)</li>
+                    <li><strong>Servings:</strong> 4 servings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>2 large sweet potatoes (peeled and sliced)</li>
+                <li>2 tbsp olive oil</li>
+                <li>1 tbsp cornstarch</li>
+                <li>1 tsp garlic powder</li>
+                <li>1/2 tsp smoked paprika</li>
+                <li>Salt & black pepper to taste</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Soak:</strong> Cut potatoes into 1/4-inch strips. Soak in cold water for 30 mins, then pat <strong>completely dry</strong>.</li>
+                <li><strong>Preheat:</strong> Heat oven to 215°C. Line a pan with parchment paper.</li>
+                <li><strong>Coat:</strong> Toss dry fries with cornstarch. Add oil and spices; toss again to coat evenly.</li>
+                <li><strong>Bake:</strong> Spread in a single layer (don't crowd!). Bake for 20-25 mins, flipping halfway through.</li>
+                <li><strong>Finish:</strong> Season with salt immediately after removing from the oven.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Design Notes</h2>
+            <p><strong>Pro-Tip:</strong> Using a dark forest green (#2d4a2a) for headers provides a nice contrast to the bright orange of the sweet potatoes!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book - 2026</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

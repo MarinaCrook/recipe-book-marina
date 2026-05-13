@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M&M Cookies - Marina's Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; margin-bottom: 20px; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+        .back-btn { text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dishes</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-right w3-padding-16">Favorites</div>
+        <div class="w3-center w3-padding-16">Marina's Recipe Book</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Desserts.html" class="w3-button w3-light-grey w3-round-large back-btn">← Back to Desserts</a>
+    
+    <header>
+        <h1>Soft & Chewy M&M Cookies</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2012/01/mm-cookies.jpg" 
+                 alt="M&M Cookies" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 15 minutes</li>
+                    <li><strong>Bake Time:</strong> 10 minutes</li>
+                    <li><strong>Total Time:</strong> 55 minutes (includes chilling)</li>
+                    <li><strong>Servings:</strong> 24 Cookies</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>1/2 cup unsalted butter, softened</li>
+                <li>1/2 cup granulated sugar</li>
+                <li>1/2 cup light brown sugar, packed</li>
+                <li>1 large egg</li>
+                <li>1 ½ tsp vanilla extract</li>
+                <li>1 ½ cups all-purpose flour</li>
+                <li>1/2 tsp baking soda</li>
+                <li>1/4 tsp salt</li>
+                <li>1 cup M&Ms (plus extra for topping)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Cream:</strong> Beat the butter and both sugars until light and fluffy. Add the egg and vanilla, mixing until well combined.</li>
+                <li><strong>Mix:</strong> Gradually add the flour, baking soda, and salt. Mix on low speed until just combined. Fold in the M&Ms by hand.</li>
+                <li><strong>Chill:</strong> Chill the dough in the refrigerator for at least 30 minutes. This prevents the cookies from spreading too thin!</li>
+                <li><strong>Prep:</strong> Preheat oven to 350°F. Line a baking sheet with parchment paper.</li>
+                <li><strong>Scoop:</strong> Scoop rounded tablespoons of dough onto the sheet. Press a few extra M&Ms onto the top of each dough ball for a professional look.</li>
+                <li><strong>Bake:</strong> Bake for 9–11 minutes. The edges should be set, but the centers should still look slightly soft.</li>
+                <li><strong>Cool:</strong> Let cookies cool on the pan for 5 minutes before moving to a wire rack.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Don't overbake!</strong> They might look a little underdone in the middle when you pull them out, but they will firm up as they cool, keeping that "soft and chewy" texture.</p>
+            <p>Recipe inspired by <a href="https://sallysbakingaddiction.com/dark-chocolate-m-m-cookies/" target="_blank">Sally's Baking Addiction</a></p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Marina's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

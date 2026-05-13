@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Banana Cream Pie - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        h3 { color: #8b5e5a; margin-top: 20px; font-weight: bold; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Banana Cream Pie</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Desserts.html" class="w3-button w3-light-grey w3-round-large">← Back to Desserts</a>
+    
+    <header>
+        <h1>Banana Cream Pie</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://www.allrecipes.com/thmb/nzJIjCaJJryfy3oKRkHrIfPPv0g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/15603-banana-cream-pie-iii-VAT-001-4x3-b23bb2d15fa649138a491254f6429772.jpg" 
+                 alt="Banana Cream Pie" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 20 minutes</li>
+                    <li><strong>Bake Time:</strong> 30 minutes</li>
+                    <li><strong>Total Time:</strong> 50 minutes</li>
+                    <li><strong>Servings:</strong> 8-10 Servings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>10 tbsp salted butter, melted</li>
+                <li>2 ⅔ cups crushed Nilla Wafers (one 11oz box)</li>
+                <li>4 to 5 medium bananas</li>
+                <li>2 large eggs + 2 egg yolks (room temp)</li>
+                <li>4 tbsp cornstarch</li>
+                <li>1/2 cup sugar</li>
+                <li>1 tsp vanilla extract + pinch of sea salt</li>
+                <li>1 cup heavy cream + 1 cup whole milk</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <h3>The Crust</h3>
+            <ol>
+                <li>Preheat oven to 275°F. Grease an 8 or 9-inch tart pan with a removable bottom.</li>
+                <li>Crush Nilla wafers into fine crumbs. Mix with melted butter until moistened.</li>
+                <li>Press firmly into the bottom and sides of the pan. Use a flat-bottomed glass to pack it down tightly.</li>
+            </ol>
+
+            <h3>The Custard</h3>
+            <ol>
+                <li>Whisk eggs, yolks, sugar, cornstarch, salt, and vanilla until smooth.</li>
+                <li>Heat 1 cup cream and 1 cup milk in a saucepan until simmering.</li>
+                <li><strong>Temper:</strong> Slowly drizzle hot milk into the egg mixture while whisking constantly. Pour everything back into the saucepan.</li>
+                <li>Cook on low, whisking for about 5 mins until thickened. Strain if lumpy.</li>
+            </ol>
+
+            <h3>Assembly & Baking</h3>
+            <ol>
+                <li>Line the crust with slices of two bananas. Pour warm custard over them.</li>
+                <li>Bake for 30 minutes (center should be slightly jiggly).</li>
+                <li>Cool at room temperature, then refrigerate loosely covered overnight.</li>
+            </ol>
+
+            <h3>Serving Day</h3>
+            <ol>
+                <li>Whip 1 ½ cups heavy cream with powdered sugar and vanilla to medium peaks.</li>
+                <li>Top the pie with two more sliced bananas and a cloud of whipped cream.</li>
+                <li>Garnish with dark chocolate shavings.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Timing:</strong> Wait until serving day to add the final banana layer and whipped cream to keep them fresh.</p>
+            <p><strong>Storage:</strong> Keep refrigerated for up to 2 days. Do not freeze!</p>
+            <p><strong>Recipe by:</strong> <a href="https://www.inspiredtaste.net/65585/banana-cream-pie/" target="_blank">Joanne Gallagher</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

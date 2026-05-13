@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shortcut Chicken Pot Pie - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Shortcut Chicken Pot Pie</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Main-Dish.html" class="w3-button w3-light-grey w3-round-large">← Back to Main Dishes</a>
+    
+    <header>
+        <h1>Shortcut Chicken Pot Pie</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://www.cookingclassy.com/wp-content/uploads/2017/10/shortcut-chicken-pot-pie-6.jpg" 
+                 alt="Shortcut Chicken Pot Pie" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 15 minutes</li>
+                    <li><strong>Cook Time:</strong> 25 minutes</li>
+                    <li><strong>Total Time:</strong> 40 minutes</li>
+                    <li><strong>Servings:</strong> 6 Servings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>1 lb cooked rotisserie chicken, shredded or diced</li>
+                <li>1 bag (12 oz) frozen mixed vegetables (peas, carrots, corn)</li>
+                <li>1 can (10.5 oz) cream of chicken soup</li>
+                <li>1/2 cup chicken broth</li>
+                <li>1/2 tsp garlic powder & 1/2 tsp dried thyme</li>
+                <li>Salt and pepper to taste</li>
+                <li>1 package refrigerated pie crusts (2 count) OR 1 sheet puff pastry</li>
+                <li>1 egg (for egg wash)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Preheat:</strong> Preheat your oven to 400°F.</li>
+                <li><strong>Mix Filling:</strong> In a large bowl, combine the shredded chicken, frozen vegetables, cream of chicken soup, chicken broth, and seasonings. Stir until well mixed.</li>
+                <li><strong>Prepare Pan:</strong> Line a 9-inch pie plate with one of the refrigerated pie crusts.</li>
+                <li><strong>Fill:</strong> Pour the chicken mixture into the pie crust and spread it evenly.</li>
+                <li><strong>Top:</strong> Place the second pie crust on top. Pinch the edges together to seal them. Cut a few small slits in the top crust to let steam escape.</li>
+                <li><strong>Wash:</strong> Brush the top of the crust with a lightly beaten egg for a golden finish.</li>
+                <li><strong>Bake:</strong> Bake for 25-30 minutes, or until the crust is golden brown and the filling is bubbling.</li>
+                <li><strong>Rest:</strong> Let it sit for 5 minutes before slicing and serving.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Variations:</strong> If you prefer a lighter top, use a sheet of puff pastry instead of a second pie crust. Just drape it over the top and trim the edges!</p>
+            <p><strong>Recipe by:</strong> <a href="https://www.cookingclassy.com/shortcut-chicken-pot-pie/" target="_blank">Cooking Classy</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

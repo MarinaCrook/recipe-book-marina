@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desserts - Marina's Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {font-family: "Karma", sans-serif}
+        .w3-bar-block .w3-bar-item {padding:20px}
+        .recipe-card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .recipe-card-img:hover { opacity: 0.7; }
+        .w3-quarter { margin-bottom: 25px; padding: 0 8px; }
+        h3 { font-size: 1.1em; margin-top: 10px; color: #4a2c2a; font-weight: bold; }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dishes</a>
+    <a href="Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+    <a href="Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-right w3-padding-16">Favorites</div>
+        <div class="w3-center w3-padding-16">Desserts</div>
+    </div>
+</div>
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <div class="w3-row-padding w3-center">
+        <div class="w3-quarter">
+            <a href="Desserts/Apple-Strudel.html">
+                <img src="https://www.smalltownwoman.com/wp-content/uploads/2023/10/Apple-Strudel-4x5-preset-21-819x1024.jpg" class="recipe-card-img">
+                <h3>Apple Strudel</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/banana-cream-pie.html">
+                <img src="https://www.allrecipes.com/thmb/nzJIjCaJJryfy3oKRkHrIfPPv0g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/15603-banana-cream-pie-iii-VAT-001-4x3-b23bb2d15fa649138a491254f6429772.jpg" class="recipe-card-img">
+                <h3>Banana Cream Pie</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Blueberry-Muffins.html">
+                <img src="https://www.culinaryhill.com/wp-content/uploads/2022/03/Blueberry-Muffins-Culinary-Hill-LR-09.jpg" class="recipe-card-img">
+                <h3>Blueberry Muffins</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Cake-Pops.html">
+                <img src="https://cakesbymk.com/wp-content/uploads/2023/06/Template-Size-for-Blog-Photos-33.jpg" class="recipe-card-img">
+                <h3>Cake Pops</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center">
+        <div class="w3-quarter">
+            <a href="Desserts/Cherry-Delight.html">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2024/10/CherryDelight-27515-MarkDerse1-3-scaled.jpg?fit=700%2C1024" class="recipe-card-img">
+                <h3>Cherry Delight</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Chocolate-Chunk.html">
+                <img src="https://www.foodandwine.com/thmb/IODo3eyFDVqu4W9xVprpPhEE2mM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Chocolate-Chunk-Halwah-Cookies-FT-RECIPE0923-1f8df755df6d468da98887aa846a2fe3.jpg" class="recipe-card-img">
+                <h3>Chocolate Chunk Cookies</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Christmas-Cookie.html">
+                <img src="https://cravingsjournal.com/wp-content/uploads/2019/12/decorated-christmas-cookies-1.jpg" class="recipe-card-img">
+                <h3>Christmas Cookies</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Classic-Madeleines.html">
+                <img src="https://bakerbynature.com/wp-content/uploads/2018/02/madeleines-12346-1-of-1.jpg" class="recipe-card-img">
+                <h3>Classic Madeleines</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center">
+        <div class="w3-quarter">
+            <a href="Desserts/Lemon-Bars.html">
+                <img src="https://www.jessicagavin.com/wp-content/uploads/2020/12/lemon-bars-27.jpg" class="recipe-card-img">
+                <h3>Lemon Bars</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/MnM-Cookies.html">
+                <img src="https://sallysbakingaddiction.com/wp-content/uploads/2012/01/mm-cookies.jpg" class="recipe-card-img">
+                <h3>M&M Cookies</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Pumpkin-Crunch.html">
+                <img src="https://foodland.com/wp-content/uploads/2023/04/pumpkin-crunch_dsc3052_1.jpg" class="recipe-card-img">
+                <h3>Pumpkin Crunch</h3>
+            </a>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Skillet-Cookie.html">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/8/12/0/WU0711_Skillet-Cookie-Sundae.jpg.rend.hgtvcom.826.620.suffix/1415992493006.webp" class="recipe-card-img">
+                <h3>Skillet Cookie</h3>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer class="w3-container w3-padding-32">
+        <h3>About Marina's Recipe Book</h3>
+        <p>Creating an inspiring and accessible webpage for home cooks to discover and share delicious recipes.</p>
+        <p>Made with <a href="https://www.w3schools.com/spaces" target="_blank">W3Schools Spaces</a></p>
+    </footer>
+
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

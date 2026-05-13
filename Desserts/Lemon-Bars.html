@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classic Lemon Bars - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        h3 { color: #8b5e5a; margin-top: 20px; font-weight: bold; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Classic Lemon Bars</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Desserts.html" class="w3-button w3-light-grey w3-round-large">← Back to Desserts</a>
+    
+    <header>
+        <h1>Classic Lemon Bars</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://www.jessicagavin.com/wp-content/uploads/2020/12/lemon-bars-27.jpg" 
+                 alt="Lemon Bars" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 20 minutes</li>
+                    <li><strong>Bake Time:</strong> 50 minutes</li>
+                    <li><strong>Total Time:</strong> 4 hours (includes chilling)</li>
+                    <li><strong>Servings:</strong> 16-20 Bars</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <h3>Shortbread Crust</h3>
+            <ul>
+                <li>1 cup (226g) unsalted butter, melted</li>
+                <li>1/2 cup (100g) granulated sugar</li>
+                <li>2 tsp pure vanilla extract</li>
+                <li>1/2 tsp salt</li>
+                <li>2 cups + 2 tbsp (265g) all-purpose flour</li>
+            </ul>
+
+            <h3>Lemon Filling</h3>
+            <ul>
+                <li>2 cups (400g) granulated sugar</li>
+                <li>6 tbsp (46g) all-purpose flour</li>
+                <li>6 large eggs</li>
+                <li>1 cup (240ml) fresh lemon juice</li>
+                <li>2 tsp fresh lemon zest</li>
+                <li>Confectioners’ sugar for dusting</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Prep:</strong> Preheat oven to 325°F. Line a 9x13-inch glass pan with parchment paper, leaving an overhang on the sides.</li>
+                <li><strong>Crust:</strong> Mix melted butter, sugar, vanilla, and salt. Add flour and stir until combined. Press firmly into the pan. Bake for 20-22 mins. Once out, poke holes in the warm crust with a fork.</li>
+                <li><strong>Filling:</strong> Sift sugar and flour together. Whisk in eggs, lemon juice, and zest until smooth.</li>
+                <li><strong>Bake:</strong> Pour filling over the warm crust. Bake for 22-26 mins until the center is set.</li>
+                <li><strong>Chill:</strong> Cool at room temperature for 2 hours, then refrigerate for 1-2 hours.</li>
+                <li><strong>Serve:</strong> Lift out using parchment paper, dust with powdered sugar, and slice.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Storage:</strong> Lemon bars stay fresh in the refrigerator for up to 1 week. They can also be frozen for up to 3 months.</p>
+            <p><strong>Pro Tip:</strong> For the cleanest edges, wipe your knife with a damp cloth after every single slice!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

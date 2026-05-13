@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classic Chicken Alfredo - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif }
+        .w3-bar-block .w3-bar-item { padding: 20px }
+        
+        body { background-color: #f8f8f8; color: #333; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Classic Chicken Alfredo</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Main-Dish.html" class="w3-button w3-light-grey w3-round-large">← Back to Main Dishes</a>
+    
+    <header>
+        <h1>Classic Chicken Alfredo</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_548/k%2FPhoto%2FRecipes%2F2023-06-chicken-alfredo-pasta-reshoot%2Fchicken-alfredo-pasta-1-horizontal_e45173-crop" 
+                 alt="Chicken Alfredo" 
+                 style="width: 350px; height: 350px; object-fit: cover; border-radius: 8px;">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Total Time:</strong> 30 minutes</li>
+                    <li><strong>Servings:</strong> 4 Servings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>8 ounces dried fettuccine noodles</li>
+                <li>2 boneless, skinless chicken breasts (about 1 pound total)</li>
+                <li>1 teaspoon kosher salt, divided</li>
+                <li>1/2 teaspoon freshly ground black pepper, divided</li>
+                <li>2 tablespoons neutral oil</li>
+                <li>8 tablespoons (1 stick) European-style unsalted butter</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 cup heavy cream</li>
+                <li>1 cup finely grated Parmesan cheese</li>
+                <li>1/4 teaspoon ground nutmeg</li>
+                <li>Fresh parsley, for garnish</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li>Bring a large pot of salted water to a boil. Cook fettuccine until al dente (8-10 mins). Reserve 1/2 cup pasta water, then drain.</li>
+                <li>Pat chicken dry. Season with 3/4 tsp salt and 1/4 tsp pepper.</li>
+                <li>Heat oil in a large frying pan over medium-high heat. Cook chicken until golden-brown (5-7 mins per side) until it hits 165°F.</li>
+                <li>Let chicken rest for 3 minutes, then slice into 1/2-inch thick pieces.</li>
+                <li>In the same pan, melt remaining butter. Sauté minced garlic until fragrant (30-60 seconds).</li>
+                <li>Whisk in heavy cream, Parmesan, nutmeg, and remaining salt/pepper. Simmer for 3-4 minutes. Use reserved pasta water to thin if needed.</li>
+                <li>Toss pasta in the sauce, top with chicken, and garnish with parsley.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Storage:</strong> Refrigerate in an airtight container for up to 3 days. Reheat gently on the stovetop.</p>
+            <p><strong>Recipe by:</strong> <a href="https://www.thekitchn.com/how-to-make-chicken-alfredo-pasta-249767" target="_blank">Meghan Splawn</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

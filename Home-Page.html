@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marina's Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif }
+        .w3-bar-block .w3-bar-item { padding: 20px }
+        
+        .recipe-card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:4;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;z-index:3" id="myOverlay"></div>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Recipe Book</div>
+    </div>
+</div>
+  
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <h2 class="w3-center">Newest Main Dishes</h2>
+    <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-quarter">
+            <a href="Main-Dish/Oven-Roasted-Chicken.html">
+                <img src="https://www.wholesomeyum.com/wp-content/uploads/2024/11/wholesomeyum-Roasted-Half-Chicken-1-1024x1536.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Roasted Half Chicken</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Main-Dish/Philly-Cheesesteak.html">
+                <img src="https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2020/01/Philly-Cheesesteak-Recipe-1200-18-1024x1536.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Philly Cheesesteak</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Main-Dish/Pancakes.html">
+                <img src="https://keviniscooking.com/wp-content/uploads/2019/12/Classic-Fluffy-Pancake-Recipe-6.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Fluffy Pancakes</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Main-Dish/Ploughman-Sandwich.html">
+                <img src="https://grilledcheesesocial.com/wp-content/uploads/2021/01/ploughmans-sandwich-grilled-cheese-social-5.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Ploughman's Sandwich</h3>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-quarter">
+            <a href="Main-Dish/Grilled-Filet-Mignon.html">
+                <img src="https://i2.wp.com/thesuburbansoapbox.com/wp-content/uploads/2019/07/Grilled-Filet-Mignon-17-700x1070.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Grilled Filet Mignon</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Main-Dish/Grilled-Salmon.html">
+                <img src="https://www.dinneratthezoo.com/wp-content/uploads/2019/05/grilled-salmon-final-2.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Grilled Salmon</h3>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="w3-center">All-Time Favorites</h2>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        <div class="w3-quarter">
+            <a href="Main-Dish/Sausage-Hash.html">
+                <img src="https://www.recipetineats.com/uploads/2025/06/Baked-breakfast-hash-sausage-potatoes_4.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Sausage Hash</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Sides/Air-Fryer-Brussels-Sprouts.html">
+                <img src="https://www.wellplated.com/wp-content/uploads/2021/02/How-To-Make-Air-Fryer-Brussels-Sprouts.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Brussels Sprouts</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Desserts/Cherry-Delight.html">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Cherry-Delight-Dessert_EXPS_TOHcom23_27515_P2_MD_03_22_4b.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Cherry Delight</h3>
+        </div>
+        <div class="w3-quarter">
+            <a href="Appetizers/Air-Fryer-Coconut-Shrimp.html">
+                <img src="https://feelgoodfoodie.net/wp-content/uploads/2020/02/Air-Fryer-Coconut-Shrimp-10.jpg" class="recipe-card-img w3-hover-opacity">
+            </a>
+            <h3>Coconut Shrimp</h3>
+        </div>
+    </div>
+
+    <hr id="about">
+
+    <div class="w3-container w3-padding-32 w3-center">  
+        <h3>About Us</h3><br>
+        <img src="https://www.allculinaryschools.com/wp-content/uploads/2020/04/chefs-working-in-kitchen-750x350-1.jpg" alt="Kitchen" class="w3-image" style="display:block;margin:auto" width="800" height="350">
+        <div class="w3-padding-32">
+            <h4><b>Goal and Mission</b></h4>
+            <h6><i>To build an inspiring and accessible webpage that allows home cooks to discover, create, and share delicious recipes.</i></h6>
+        </div>
+    </div>
+    
+    <footer class="w3-container w3-padding-32">
+        <h6>About Us</h6>
+        <p>My goal is to create a website to display a collection of recipes for people to discover new ideas and enjoy.</p>
+        <p>Made by Marina Crook with W3Schools Spaces</p>
+    </footer>
+
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

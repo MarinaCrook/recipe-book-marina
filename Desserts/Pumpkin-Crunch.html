@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pumpkin Crunch - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        h3 { color: #8b5e5a; margin-top: 20px; font-weight: bold; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Pumpkin Crunch</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Desserts.html" class="w3-button w3-light-grey w3-round-large">← Back to Desserts</a>
+    
+    <header>
+        <h1>Pumpkin Crunch</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://foodland.com/wp-content/uploads/2023/04/pumpkin-crunch_dsc3052_1.jpg" 
+                 alt="Pumpkin Crunch" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 15 minutes</li>
+                    <li><strong>Bake Time:</strong> 50 minutes</li>
+                    <li><strong>Total Time:</strong> 1 hour 5 minutes</li>
+                    <li><strong>Servings:</strong> 12 Servings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>1 package yellow cake mix</li>
+                <li>1 can pumpkin (15 oz)</li>
+                <li>1 can evaporated milk (12 oz)</li>
+                <li>3 large eggs</li>
+                <li>1 cup sugar</li>
+                <li>1 tsp ground cinnamon</li>
+                <li>1/2 tsp salt</li>
+                <li>1 cup chopped pecans</li>
+                <li>1 cup butter, melted</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Prep the Pan:</strong> Grease the bottom of a 9x13 pan and line the bottom with parchment or wax paper (this is critical for the flip!).</li>
+                <li><strong>Mix Filling:</strong> In a large bowl, whisk together the pumpkin, evaporated milk, eggs, sugar, cinnamon, and salt until well combined.</li>
+                <li><strong>Layer:</strong> Pour the pumpkin mixture into the pan. Sprinkle the dry yellow cake mix evenly over the top.</li>
+                <li><strong>Top & Bake:</strong> Sprinkle the chopped pecans over the cake mix, then drizzle the melted butter evenly over everything. Bake at 350°F for 50-55 minutes or until golden brown.</li>
+                <li><strong>The Flip:</strong> Let it cool completely. Run a knife around the edges to loosen. Invert the pan onto a large platter so the pecans are now on the bottom and the pumpkin is on top.</li>
+                <li><strong>Serve:</strong> Top with whipped cream and enjoy!</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Perfect for:</strong> Holiday parties or family gatherings. It's actually even better the next day after the flavors have chilled!</p>
+            <p><strong>Recipe by:</strong> <a href="https://foodland.com/recipe/pumpkin-crunch-recipe/" target="_blank">Foodland</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

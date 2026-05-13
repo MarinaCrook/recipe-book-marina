@@ -1,0 +1,136 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sauteed Green Beans - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #2d4a2a; text-align: center; } 
+        h2 { color: #4a6a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        h3 { color: #5e8b5a; margin-top: 20px; font-weight: bold; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 450px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:4;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;z-index:3" id="myOverlay"></div>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Sauteed Green Beans</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Sides.html" class="w3-button w3-light-grey w3-round-large">← Back to Sides</a>
+    
+    <header>
+        <h1>Garlic Sauteed Garden-Fresh Green Beans</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://www.recipetineats.com/tachyon/2021/10/Garlic-Sauteed-Green-Beans_08-SQ.jpg" 
+                 alt="Garlic Sauteed Green Beans" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 10 minutes</li>
+                    <li><strong>Cook Time:</strong> 10 minutes</li>
+                    <li><strong>Total Time:</strong> 20 minutes</li>
+                    <li><strong>Servings:</strong> 4 servings</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>1 lb fresh green beans, trimmed</li>
+                <li>1 tablespoon olive oil</li>
+                <li>2 tablespoons butter</li>
+                <li>3 cloves garlic, minced</li>
+                <li>1/4 teaspoon salt (to taste)</li>
+                <li>1/4 teaspoon black pepper</li>
+                <li>Optional: A squeeze of lemon juice</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Blanch:</strong> Bring a large pot of salted water to a boil. Add green beans and cook for 3-4 minutes until tender-crisp. Drain and immediately shock in ice water to keep them bright green.</li>
+                <li><strong>Dry:</strong> Pat the beans thoroughly dry with a towel.</li>
+                <li><strong>Sauté:</strong> In a large skillet, heat olive oil and butter over medium-high heat.</li>
+                <li><strong>Flavor:</strong> Add the green beans and sauté for 2-3 minutes. Add minced garlic and cook for 1 more minute until fragrant (don't let the garlic burn!).</li>
+                <li><strong>Season:</strong> Season with salt and pepper. Toss well and serve immediately.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Texture Tip:</strong> Shocking the beans in ice water is the secret to that "restaurant-style" bright green color and snappy texture.</p>
+            <p><strong>Recipe by:</strong> <a href="https://www.allrecipes.com/recipe/244868/sauteed-garden-fresh-green-beans/" target="_blank">AllRecipes</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classic Philly Cheesesteak - Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #2d4a2a; text-align: center; } 
+        h2 { color: #4a6a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        h3 { color: #5e8b5a; margin-top: 20px; font-weight: bold; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 450px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:250px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">Classic Philly Cheesesteak</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Main-Dish.html" class="w3-button w3-light-grey w3-round-large">← Back to Main Dishes</a>
+    
+    <header>
+        <h1>Classic Philly Cheesesteak</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://natashaskitchen.com/wp-content/uploads/2019/09/Philly-CheeseSteak-3.jpg" 
+                 alt="Philly Cheesesteak" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 15 minutes</li>
+                    <li><strong>Cook Time:</strong> 15 minutes</li>
+                    <li><strong>Total Time:</strong> 30 minutes</li>
+                    <li><strong>Servings:</strong> 2 Sandwiches</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>1 lb Ribeye steak, very thinly sliced</li>
+                <li>1/2 yellow onion, thinly sliced</li>
+                <li>4 slices Provolone cheese</li>
+                <li>2 Hoagie rolls</li>
+                <li>2 tbsp butter, softened</li>
+                <li>1 tbsp olive oil</li>
+                <li>Garlic salt and black pepper</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Caramelize:</strong> Sauté the onions in olive oil until soft and golden. Set them aside.</li>
+                <li><strong>Sear:</strong> Sauté the thinly sliced beef over high heat until browned. Season with garlic salt and pepper.</li>
+                <li><strong>Melt:</strong> Mix the onions back in, divide into two piles, and top each with provolone slices until melted.</li>
+                <li><strong>Toast:</strong> Butter your hoagie rolls and toast them until golden.</li>
+                <li><strong>Load:</strong> Scoop the meat and cheese into the rolls and serve hot.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>The Meat:</strong> For the best results, have your butcher slice the ribeye for you, or partially freeze it at home to get those ultra-thin slices yourself!</p>
+            <p><strong>Recipe by:</strong> <a href="https://natashaskitchen.com/philly-cheesesteak/" target="_blank">Natasha's Kitchen</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marina Crook's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html>

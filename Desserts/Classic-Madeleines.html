@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classic Madeleines - Marina's Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Karma", sans-serif; }
+        .w3-bar-block .w3-bar-item { padding: 20px; }
+        
+        body { background-color: #f8f8f8; color: #333; line-height: 1.6; }
+        .recipe-container {
+            max-width: 1000px;
+            margin: 100px auto 40px;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 { color: #4a2c2a; text-align: center; margin-bottom: 20px; }
+        h2 { color: #6a4a48; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px; }
+        
+        .ingredients ul { list-style-type: square; padding-left: 20px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin-bottom: 15px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        
+        .recipe-image {
+            width: 350px; 
+            height: 350px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+        .back-btn { text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="../Home-Page.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../Appetizers.html" onclick="w3_close()" class="w3-bar-item w3-button">Appetizers</a>
+    <a href="../Main-Dish.html" onclick="w3_close()" class="w3-bar-item w3-button">Main Dish</a>
+    <a href="../Sides.html" onclick="w3_close()" class="w3-bar-item w3-button">Sides</a>
+    <a href="../Desserts.html" onclick="w3_close()" class="w3-bar-item w3-button">Desserts</a>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-right w3-padding-16">Favorites</div>
+        <div class="w3-center w3-padding-16">Marina's Recipe Book</div>
+    </div>
+</div>
+
+<div class="recipe-container">
+    <a href="../Desserts.html" class="w3-button w3-light-grey w3-round-large back-btn">← Back to Desserts</a>
+    
+    <header>
+        <h1>Classic French Madeleines</h1>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 20px 0;">
+            <img src="https://bakerbynature.com/wp-content/uploads/2018/02/madeleines-12346-1-of-1.jpg" 
+                 alt="French Madeleines" class="recipe-image">
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2>Recipe Details</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><strong>Prep Time:</strong> 20 minutes</li>
+                    <li><strong>Cook Time:</strong> 10 minutes</li>
+                    <li><strong>Total Time:</strong> 1 hour 30 minutes (includes chilling)</li>
+                    <li><strong>Servings:</strong> 24 Madeleines</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <section class="ingredients">
+            <h2>🛒 Ingredients</h2>
+            <ul>
+                <li>2/3 cup granulated sugar</li>
+                <li>3 large eggs, at room temperature</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>1/2 teaspoon almond extract (optional)</li>
+                <li>1/8 teaspoon salt</li>
+                <li>1 cup all-purpose flour</li>
+                <li>1/2 cup (1 stick) unsalted butter, melted and cooled</li>
+                <li>1/2 teaspoon lemon zest (optional)</li>
+                <li>Confectioners' sugar, for dusting</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>👩‍🍳 Instructions</h2>
+            <ol>
+                <li><strong>Beat:</strong> In a large bowl, beat the eggs and granulated sugar with an electric mixer until the mixture is thick and pale (about 5-8 minutes).</li>
+                <li><strong>Flavor:</strong> Stir in the vanilla extract, almond extract, and lemon zest.</li>
+                <li><strong>Fold Flour:</strong> Sift the flour and salt over the egg mixture. Using a spatula, gently fold the flour into the batter until just combined.</li>
+                <li><strong>Fold Butter:</strong> Take a small amount of the batter and stir it into the melted butter. Then, gently fold the butter mixture back into the main batter.</li>
+                <li><strong>Chill:</strong> Cover the batter and refrigerate for at least 30-60 minutes. Chilling the batter is key to getting the classic "hump" on the back!</li>
+                <li><strong>Prep Pan:</strong> Preheat oven to 375°F (190°C). Generously butter and flour a madeleine pan.</li>
+                <li><strong>Bake:</strong> Spoon the batter into the molds (do not overfill). Bake for 8-10 minutes, or until the edges are golden and the tops spring back.</li>
+                <li><strong>Finish:</strong> Invert the pan onto a rack to cool. Dust with confectioners' sugar once cooled.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="Notes">
+            <h2>📝 Notes</h2>
+            <p><strong>Texture Tip:</strong> Madeleines are best enjoyed the same day they are baked. They pair perfectly with a cup of tea or coffee!</p>
+            <p>Recipe by <a href="https://bakerbynature.com/classic-french-madeleines/" target="_blank">Ashley Manila (Baker by Nature)</a></p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Marina's Recipe Book</p>
+    </footer>
+</div>
+
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</body>
+</html> 
